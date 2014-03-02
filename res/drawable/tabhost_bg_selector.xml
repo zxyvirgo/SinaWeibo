@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 微博列表界面tab栏关注 按钮 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tabhost_press"  android:state_pressed="true" />
+    <item android:drawable="@drawable/tabhost_press" android:state_checked="true" />
+    <item android:drawable="@drawable/tabhost_bg"/>
+</selector>

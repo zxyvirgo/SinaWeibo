@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/background"
+>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/add_account"
+    android:layout_gravity="right"
+    android:layout_marginTop="10px"
+    android:layout_marginRight="10px"
+    android:id="@+id/btn_add_account"
+    />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"    
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="100px"
+    >
+    <ImageView
+       	android:layout_width="200px"
+    	android:layout_height="200px"
+        android:id="@+id/image_head"
+        android:src="@drawable/user_head"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_user_list"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+ 		android:layout_marginTop="50px"
+        android:background="@drawable/account_selete_bg" />
+    
+</LinearLayout>
+    
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_login"
+    android:layout_marginTop="70px"
+    android:layout_gravity="center"
+	android:text="@string/login"
+	android:textColor="@color/white"
+	android:textSize="30px"
+    android:id="@+id/btn_login"
+    />
+</LinearLayout>
+

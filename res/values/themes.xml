@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="theme_full_Screen" parent="android:Theme.Black">
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowFullscreen">?android:windowNoTitle</item>
+	</style>
+	<style name="theme_NoTitle" parent="android:Theme.Black">
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowContentOverlay">@null</item> 
+	</style>
+</resources>

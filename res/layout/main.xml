@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@android:id/tabhost"
+    android:background="#ffffff"
+    >
+	<TabWidget
+	     android:id="@android:id/tabs"
+	 	 android:layout_width="fill_parent"
+	     android:layout_height="wrap_content" 
+	     android:visibility="gone"/>
+	<FrameLayout
+	     android:id="@android:id/tabcontent"
+		 android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"/>
+	<RadioGroup
+	    android:id="@+id/main_radio"
+	    android:layout_width="fill_parent"
+	    android:layout_height="48dp"
+	    android:layout_gravity="bottom"
+	    android:orientation="horizontal"
+	    android:background="@drawable/bar" >
+	    <RadioButton
+	        android:id="@+id/rb_home"
+	        android:drawableTop="@drawable/home_icon"
+	        style="@style/rg_style"
+	        android:text="主页" />
+	    <RadioButton
+	        android:id="@+id/rb_at"
+	        android:drawableTop="@drawable/at_icon"
+	        style="@style/rg_style"
+	        android:text="我" />
+	    <RadioButton
+	        android:id="@+id/rb_mess"
+	        android:drawableTop="@drawable/msg_icon"      
+	        style="@style/rg_style"
+	        android:text="消息" />
+	    <RadioButton
+	        android:id="@+id/rb_more"      
+	        android:drawableTop="@drawable/more_icon"
+	        style="@style/rg_style"
+	        android:text="更多" />	    	    
+	</RadioGroup>
+</TabHost>
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/list_item">"
+	  <ImageView
+	      android:id="@+id/img_wb_item_head"
+		  android:layout_width="48dp"
+		  android:layout_height="48dp"
+		  android:src="@drawable/user_head"
+		  android:layout_marginLeft="3dp"
+		  android:layout_marginTop="5dp"/>
+		  
+	  <!-- 右边框架 -->
+	  <LinearLayout
+	  android:layout_width="match_parent"
+	  android:orientation="vertical"
+	  android:layout_height="wrap_content"
+	  android:layout_margin="5dp">
+		 <!-- 用户名称、新浪认证部分 --> 
+		<LinearLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="horizontal">
+			  <!-- 用户名称 -->
+			  <TextView android:id="@+id/txt_wb_item_uname"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:textColor="#424d54"
+				  android:textSize="15dp"
+			  />
+			  <!-- 新浪认证 -->
+			   <ImageView android:id="@+id/img_wb_item_V"
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:visibility="gone"
+					  android:src="@drawable/v"/>
+			  <RelativeLayout 
+			   			android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:gravity="right">
+					  <!-- 发布时间 -->
+					 <TextView android:id="@+id/txt_wb_item_time"
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:text="1小时前"
+					  android:textColor="#efa608"
+					  android:textSize="12dp"
+					  />  
+			</RelativeLayout>		  
+	 	</LinearLayout> 
+
+		 <!-- 微博正文内容 --> 
+		<LinearLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical">
+		   <!-- 微博正文内容 -->
+			 <TextView android:id="@+id/txt_wb_item_content"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:text="微博正文内容微博正文内容微博正文内容微博正文内容微博正文内容微博正文内容微博正文内容"
+			  android:textColor="#6b717b"
+			  android:textSize="13dp"
+			  />  
+			 <ImageView android:id="@+id/img_wb_item_content_pic"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:src="@drawable/user_head"
+			  android:layout_marginTop="3dp"
+			  android:visibility="gone"
+			 />
+		 </LinearLayout>
+
+	  	 <!-- 转发的子微博内容 --> 
+		<LinearLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:id="@+id/lyt_wb_item_sublayout"
+		  android:orientation="vertical"
+		  android:layout_marginTop="3dp"
+		  android:visibility="gone"
+		  android:background="@drawable/popup">
+ 
+	  		 <!-- 微博正文内容 -->
+			 <TextView android:id="@+id/txt_wb_item_subcontent"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:text="微博正文内容微博正文内容微博正文内容微博正文内容微博正文内容微博正文内容微博正文内容"
+			  android:textColor="#6b717b"
+			  android:textSize="13dp"
+			  />  
+			 <ImageView android:id="@+id/img_wb_item_content_subpic"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:src="@drawable/user_head"
+			  android:layout_marginTop="3dp"
+			  android:visibility="gone"
+			 />
+	  </LinearLayout>
+	  	 <!-- 微博来源部分 --> 
+	  <LinearLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="horizontal"
+		  android:layout_marginTop="3dp"
+		  android:layout_marginBottom="3dp" >
+	  	 <!-- 用户名称 -->
+		  <TextView android:id="@+id/txt_wb_item_from"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:text="来自:Touch Android"
+			  android:textColor="#9ba0aa"
+			  android:textSize="12dp"
+		  />
+		  <LinearLayout
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="horizontal"
+			  android:gravity="right">
+			  <TextView android:id="@+id/txt_wb_item_redirect"
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:drawableLeft="@drawable/redirect_icon"
+					  android:text="10"
+					  android:textColor="#9ba0aa"
+					  android:textSize="13dp"
+				  />
+			  <TextView android:id="@+id/txt_wb_item_comment"
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_marginLeft="5dp"
+					  android:drawableLeft="@drawable/comment_icon"
+					  android:text="100"
+					  android:textColor="#9ba0aa"
+					  android:textSize="13dp"/>  
+  		 </LinearLayout>
+      </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
