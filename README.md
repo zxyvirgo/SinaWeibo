@@ -5,4 +5,6 @@
 QQ:1319444233  
 新浪微博：方杰_Jay
 
-注：由于新浪微博的开发平台申请的应用没有通过审核，所以不是所有的微博帐号都可以授权成功，需要测试的话可以找我，也可以在源码中（com.fangjie.weibo.util.AuthUtil）改成你申请的appkey，appsecret。
+注：1.由于新浪微博的开发平台申请的应用没有通过审核，所以不是所有的微博帐号都可以授权成功，需要测试的话可以找我，也可以在源码中（com.fangjie.weibo.util.AuthUtil）改成你申请的appkey，appsecret。
+2.效果在“演示”文件夹中。
+3.代码是之后从 http://git.oschina.net/fangjie/Sina-Weibo 迁移过来的。
